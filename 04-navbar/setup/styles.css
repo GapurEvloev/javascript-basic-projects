@@ -199,12 +199,12 @@ nav {
   display: none;
 }
 .links {
-  /* height: 0;
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
 .show-links {
-  height: 10rem;
+  height: var(--links-height);
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -223,6 +223,8 @@ nav {
   }
   .links {
     height: auto;
+  }
+  .links-list {
     display: flex;
   }
   .links a {
