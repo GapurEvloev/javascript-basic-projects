@@ -231,11 +231,15 @@ Questions
   margin-bottom: 0;
 }
 /* hide text */
-/* .question-text {
-  display: none;
+.question-text-wrap {
+  height: 0;
+  overflow: hidden;
+  /* display: none; */
+  transition: var(--transition);
 }
-.show-text .question-text {
-  display: block;
+.show-text .question-text-wrap {
+  height: var(--question-height);
+  /* display: block; */
 }
 .minus-icon {
   display: none;
@@ -245,4 +249,4 @@ Questions
 }
 .show-text .plus-icon {
   display: none;
-} */
+}
